@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="HU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A magyar Keresztapa</title>
+    <style>
+        body {
+            position: relative;
+            background-image: url(./img/parlament.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            border: 5px solid white;
+            box-sizing: border-box;
+        }
+
+        #gulyas {
+            background-image: url(./img/gulyasGergely.jpg);
+        }
+
+        #lazar {
+            background-image: url(./img/lazarJanos.jpg);
+        }
+
+        #matolcsy {
+            background-image: url(./img/matolcsyGyorgy.jpg);
+        }
+
+        #navracsics {
+            background-image: url(./img/navracsicsTibor.jpg);
+        }
+
+        #orban {
+            background-image: url(./img/orbanViktor.jpg);
+        }
+
+        #pinter {
+            background-image: url(./img/pinterSandor.jpg);
+        }
+
+        #rogan {
+            background-image: url(./img/rogánAntal.jpg);
+        }
+
+        #semjen {
+            background-image: url(./img/semjénZsolt.jpg);
+        }
+
+        #szijjarto {
+            background-image: url(./img/szijjartoPeter.jpg);
+        }
+
+        #varga {
+            background-image: url(./img/vargaMihaly.jpg);
+        }
+
+        #counter {
+            color: white;
+            position: fixed;
+            top: 0px;
+            left: 50%;
+            width: 80px;
+            height: 40px;
+            transform: translate(-40px);
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.9);
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-sizing: border-box;
+        }
+
+        #startMessage {
+            position: fixed;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 100px;
+            color: green;
+            background-color: white;
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            padding: 5px;
+            border-color: red;
+            border-radius: 10px;
+            z-index: 1000;
+            top: 50%;
+        }
+    </style>
+    <script src="./script.js"></script>
+
+</head>
+
+<body>
+    <div id="gulyas"></div>
+    <div id="lazar"></div>
+    <div id="matolcsy"></div>
+    <div id="navracsics"></div>
+    <div id="orban"></div>
+    <div id="pinter"></div>
+    <div id="rogan"></div>
+    <div id="semjen"></div>
+    <div id="szijjarto"></div>
+    <div id="varga"></div>
+
+    <div id="startMessage">Kapd el a maffiavezért!</div>
+
+    <div id="counter">0</div>
+
+    <audio id="backgroundMusic" loop>
+        <source src="./music/godfather_theme.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+
+</html>
