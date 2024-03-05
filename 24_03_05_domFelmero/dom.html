@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="HU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dom.css">
+    <title>DOM felmérő - Sudár Róbert / T13</title>
+</head>
+
+<body>
+
+    <h2>1. feladat - Aktuális szöveghossz</h2>
+    <input type="text" id="inputField" oninput="updateCharacterCount()">
+    <p id="karakterszam">0 karakter</p>
+    <hr>
+
+    <h2>2. feladat - Kirajzoló</h2>
+    <input type="number" id="xCoord" value="100">
+    <input type="number" id="yCoord" value="100">
+    <button id="drawButton" onclick="drawSquare()">Kirajzol</button>
+    <button id="deleteButton" onclick="deleteSquare()">Törlés</button>
+    <div id="drawingArea"></div>
+    <hr>
+
+
+    <h2>3. feladat - Bújócska</h2>
+    <button id="toggleButton">Kép Elhalványítása/Megjelenítése</button>
+    <img src="./hidingCat.jpg" id="catImage" alt="Elrejtett Macska">
+    <hr>
+
+
+    <h2>4. feladat - Hibaüzenetek</h2>
+    <div id="messageBox" class="hidden"></div>
+
+    <label for="email">E-mail cím:</label>
+    <input type="text" id="email" name="email">
+
+    <label for="confirmEmail">E-mail megerősítése:</label>
+    <input type="text" id="confirmEmail" name="confirmEmail">
+
+    <button id="checkButton">Ellenőrzés</button>
+
+
+
+
+    <script src="./dom.js"></script>
+</body>
+
+</html>

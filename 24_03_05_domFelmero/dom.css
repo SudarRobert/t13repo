@@ -1,0 +1,47 @@
+#inputField {
+  margin-right: 10px;
+}
+
+#karakterszam {
+  display: inline;
+  margin-left: 10px;
+}
+
+#drawingArea {
+  position: relative;
+}
+
+.square {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+#catImage {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: auto;
+  transition: opacity 5s ease-in-out;
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+#messageBox {
+  margin-bottom: 20px;
+  padding: 10px;
+  color: #fff;
+}
+
+.error {
+  background-color: #ff4d4d;
+}
+
+.success {
+  background-color: #4caf50;
+}
