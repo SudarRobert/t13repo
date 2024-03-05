@@ -31,9 +31,9 @@ function deleteSquare() {
 }
 
 //3. feladat - Bújócska
-var button = document.getElementById("toggleButton");
-var image = document.getElementById("catImage");
-var isImageVisible = true;
+let button = document.getElementById("toggleButton");
+let image = document.getElementById("catImage");
+let isImageVisible = true;
 
 button.addEventListener("click", function () {
   if (isImageVisible) {
